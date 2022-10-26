@@ -1,12 +1,12 @@
 public class Main {
 
-    public static void leapYear(int years) {
+    public static void theOnsetOfaLeapYear(int years) {
         if (years % 4 == 0 && years % 100 != 0 || years % 400 == 0) {
             System.out.println(years + " год является високосным");
         } else System.out.println(years + "год не является високосным");
     }
 
-    private static void osForClientDevise(int clientOs, int clientDeviceYear) {
+    private static void installingTheApp(int clientOs, int clientDeviceYear) {
         if (clientOs == 0 && clientDeviceYear >= 2015) {
             System.out.println("Установите версию приложения для iOS по ссылке");
         } else if (clientOs == 0) {
@@ -19,7 +19,7 @@ public class Main {
         }
     }
 
-    public static void deliveryOfBankingProducts(int deliveryDistance) {
+    public static void deliverBankingProduct(int deliveryDistance) {
         if (deliveryDistance <= 20) {
             System.out.println("Доставка в пределах " + deliveryDistance + " км занимает сутки.");
         } else if (deliveryDistance <= 60) {
@@ -34,13 +34,13 @@ public class Main {
 
     public static void main (String[]args) {
         int years = 2025;
-        leapYear(years);
+        theOnsetOfaLeapYear(years);
 
         int clientOs = 0;
         int clientDeviceYear = 2016;
-        osForClientDevise(clientOs, clientDeviceYear);
+        installingTheApp(clientOs, clientDeviceYear);
 
         int deliveryDistance = 90;
-        deliveryOfBankingProducts(deliveryDistance);
+        deliverBankingProduct(deliveryDistance);
     }
     }
